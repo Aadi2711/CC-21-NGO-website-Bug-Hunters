@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login and Registration Form</title>
+        <link rel="stylesheet" href="signupngo.css">
+    </head>
+    <body>
+        <div class="abc">
+            <div class="form-box">
+                <div class="buttonbox">
+                    <div id="bt"></div>
+                    <button type="button" class="toggle" onclick="login()">Log In</button>
+                    <button type="button" class="toggle" onclick="register()">Register</button>
+                </div>
+                <div class="social">
+                    <img src="fb.png" alt="Facebook">
+                    <img src="insta.png" alt="Insta">
+                    <img src="twi.png" alt="Twitter">        
+                </div>
+                <form id="login" class="input">
+                    <input type="text" class="input-detail" placeholder="NGO ID" required>
+                    <input type="text" class="input-detail" placeholder="Region ID" required>
+                    <input type="text" class="input-detail" placeholder="Enter your password" required>
+                    <input type="checkbox" class="check"><span>Remember Password</span>
+                    <button type="submit" class="sub">Login</button>
+                </form>
+                <form id="register" class="input">
+                    <input type="text" class="input-detail" placeholder="NGO ID" required>
+                    <input type="email" class="input-detail" placeholder="Email ID" required>
+                    <input type="text" class="input-detail" placeholder="Region ID" required>
+                    <input type="text" class="input-detail" placeholder="Enter your password" required>
+                    <input type="checkbox" class="check"><span>I agree to the terms and conditions.</span>
+                    <button type="submit" class="sub">Sign Up</button>
+                </form>
+            </div>
+        </div>
+        <script>
+            var x= document.getElementById("login");
+            var y= document.getElementById("register");
+            var z= document.getElementById("bt");
+
+            function register(){
+                x.style.left="-400px";
+                y.style.left="50px";
+                z.style.left="120px";
+            }
+            function login(){
+                x.style.left="50px";
+                y.style.left="450px";
+                z.style.left="0px";
+            }
+
+        </script>
+    </body>
+</html>
